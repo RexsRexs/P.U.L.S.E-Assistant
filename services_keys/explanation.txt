@@ -1,0 +1,39 @@
+Your .env file is a top priority for the whole system to work, you will need to make one under "services_keys".
+In here you will need to put all your api keys in to.
+
+---!!!---
+
+If you move your .env file it's necessary that you edit the line in "jadeai_main.py".
+"sys.path.append("services_keys")", to the folder you moved it to.
+So if you moves it to "ai_python" then edit it to "sys.path.append("ai_python")".
+
+- How can you set the .env file up?
+
+I did this with mine: 
+
+# Here is all our API's for the AI
+
+OPENAI_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# =============================
+
+# Here is all our API's for accessibility to other services
+
+GOOGLE_GMAIL_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GOOGLE_CALLENDER_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# =============================
+
+# Here is out database API
+# DB password: xxxxxxxx
+
+# =============================
+# =============================
+
+There is also a vosksystem, our vosk system is the part of JadeAI where it detects what you are saying and telling it to JadeAI.
+If you want to switch its model or language then visit this official website: https://alphacephei.com/vosk/models
+On there you can download various vosk models.
+
+If you switch model you need to replace the folder "vosk-model-small-en-us-0.15" with the vosk model you downloaded,
+and then you need to replace this part of the code in "speechtotext.py" 
+MODEL_PATH = "vosk-model-small-en-us-0.15" -> to MODEL_PATH = "YOUR-VOSK-MODEL-XX-XX-0.00". 
