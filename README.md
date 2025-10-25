@@ -1,13 +1,13 @@
-# Project JadeAI
+# Project P.U.L.S.E
 
 This is my idea of a personal assistant, taken inspiration from Jarvis.
 I am working on this in my freetime and i am using this for being better to code in python, and javascript.
 
 The project is a big project and i want to integrate it with several things that you also can add it to, like google calender etc.
 
-This is a guide on what to edit and how to setup the jadeai:
+This is a guide on what to edit and how to setup the P.U.L.S.E:
 
-At first it's necesarry that you think about which AI voice you want right now im fully working on how to get multiple voices to JadeAI.
+At first it's necesarry that you think about which AI voice you want right now im fully working on how to get multiple voices to P.U.L.S.E.
 Secondly in "service_keys" check the "explanation.txt" file for how to setup the .env file.
 In "howtosetupapi's.txt" you can find out how to setup the AI's different API accesibilities.
 
@@ -21,6 +21,10 @@ These files cant be touched at all because there is a risk for the whole system 
 "vosksystem_python" and "pyttsx3system_python" is our TTS and STT folders there will be documentation for booth of the libraies under here:
 https://pypi.org/project/pyttsx3/
 https://pypi.org/project/vosk/
+
+P.U.L.S.E stands for Protective, Usefull, Learning, Secure, Engine.
+And is a assistant that you can integrate with all things you want it to work with. 
+I have made this project open-source so that you can modify and play with it's code.
 
 JadeAI is focussed on that it should could work without internet and will be tested serveral times.
 JadeAI will be stress tested etc and there will be a file for more information about that.
